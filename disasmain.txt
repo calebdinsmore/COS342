@@ -1,0 +1,312 @@
+Dump of assembler code for function main:
+   0x08048742 <+0>:     push   %ebp
+   0x08048743 <+1>:     mov    %esp,%ebp
+   0x08048745 <+3>:     and    $0xfffffff0,%esp
+   0x08048748 <+6>:     sub    $0x4f0,%esp
+   0x0804874e <+12>:    movl   $0x0,0x4e8(%esp)
+   0x08048759 <+23>:    jmp    0x8048803 <main+193>
+   0x0804875e <+28>:    movl   $0x8048e20,0x4(%esp)
+   0x08048766 <+36>:    movl   $0x8048e2b,(%esp)
+   0x0804876d <+43>:    call   0x8048500 <printf@plt>
+   0x08048772 <+48>:    lea    0xc0(%esp),%eax
+   0x08048779 <+55>:    mov    %eax,0x4(%esp)
+   0x0804877d <+59>:    movl   $0x8048e2b,(%esp)
+   0x08048784 <+66>:    call   0x80485f0 <__isoc99_scanf@plt>
+   0x08048789 <+71>:    movl   $0x8048e2e,0x4(%esp)
+   0x08048791 <+79>:    movl   $0x8048e2b,(%esp)
+   0x08048798 <+86>:    call   0x8048500 <printf@plt>
+   0x0804879d <+91>:    lea    0xb6(%esp),%eax
+   0x080487a4 <+98>:    mov    %eax,0x4(%esp)
+   0x080487a8 <+102>:   movl   $0x8048e2b,(%esp)
+   0x080487af <+109>:   call   0x80485f0 <__isoc99_scanf@plt>
+   0x080487b4 <+114>:   movl   $0x8048e39,0x4(%esp)
+   0x080487bc <+122>:   lea    0xc0(%esp),%eax
+   0x080487c3 <+129>:   mov    %eax,(%esp)
+   0x080487c6 <+132>:   call   0x80484f0 <strcmp@plt>
+   0x080487cb <+137>:   test   %eax,%eax
+   0x080487cd <+139>:   jne    0x80487ea <main+168>
+   0x080487cf <+141>:   movl   $0x8048e39,0x4(%esp)
+   0x080487d7 <+149>:   lea    0xb6(%esp),%eax
+   0x080487de <+156>:   mov    %eax,(%esp)
+   0x080487e1 <+159>:   call   0x80484f0 <strcmp@plt>
+---Type <return> to continue, or q <return> to quit---
+   0x080487e6 <+164>:   test   %eax,%eax
+   0x080487e8 <+166>:   je     0x80487f8 <main+182>
+   0x080487ea <+168>:   movl   $0x8048e3f,(%esp)
+   0x080487f1 <+175>:   call   0x8048560 <puts@plt>
+   0x080487f6 <+180>:   jmp    0x8048803 <main+193>
+   0x080487f8 <+182>:   movl   $0x1,0x4e8(%esp)
+   0x08048803 <+193>:   cmpl   $0x0,0x4e8(%esp)
+   0x0804880b <+201>:   je     0x804875e <main+28>
+   0x08048811 <+207>:   movl   $0xffffffff,0x4e4(%esp)
+   0x0804881c <+218>:   movl   $0x0,(%esp)
+   0x08048823 <+225>:   call   0x8048540 <seteuid@plt>
+   0x08048828 <+230>:   movl   $0x8048e58,0x4(%esp)
+   0x08048830 <+238>:   movl   $0x8048e5a,(%esp)
+   0x08048837 <+245>:   call   0x80485b0 <fopen@plt>
+   0x0804883c <+250>:   mov    %eax,0x4c0(%esp)
+   0x08048843 <+257>:   movl   $0x0,0x4dc(%esp)
+   0x0804884e <+268>:   jmp    0x80488f1 <main+431>
+   0x08048853 <+273>:   movl   $0x0,0x4d8(%esp)
+   0x0804885e <+284>:   jmp    0x8048894 <main+338>
+   0x08048860 <+286>:   mov    0x4e0(%esp),%eax
+   0x08048867 <+293>:   lea    0x61(%esp),%ecx
+   0x0804886b <+297>:   mov    0x4d8(%esp),%edx
+   0x08048872 <+304>:   add    %ecx,%edx
+   0x08048874 <+306>:   mov    %al,(%edx)
+   0x08048876 <+308>:   addl   $0x1,0x4d8(%esp)
+   0x0804887e <+316>:   mov    0x4c0(%esp),%eax
+   0x08048885 <+323>:   mov    %eax,(%esp)
+   0x08048888 <+326>:   call   0x80485d0 <fgetc@plt>
+   0x0804888d <+331>:   mov    %eax,0x4e0(%esp)
+   0x08048894 <+338>:   cmpl   $0xa,0x4e0(%esp)
+   0x0804889c <+346>:   je     0x80488a8 <main+358>
+---Type <return> to continue, or q <return> to quit---
+   0x0804889e <+348>:   cmpl   $0xffffffff,0x4e0(%esp)
+   0x080488a6 <+356>:   jne    0x8048860 <main+286>
+   0x080488a8 <+358>:   mov    0x4d8(%esp),%eax
+   0x080488af <+365>:   lea    0x1(%eax),%edx
+   0x080488b2 <+368>:   mov    %edx,0x4d8(%esp)
+   0x080488b9 <+375>:   movb   $0x0,0x61(%esp,%eax,1)
+   0x080488be <+380>:   lea    0xd4(%esp),%edx
+   0x080488c5 <+387>:   mov    0x4dc(%esp),%eax
+   0x080488cc <+394>:   imul   $0x32,%eax,%eax
+   0x080488cf <+397>:   add    %eax,%edx
+   0x080488d1 <+399>:   lea    0x61(%esp),%eax
+   0x080488d5 <+403>:   mov    %eax,0x4(%esp)
+   0x080488d9 <+407>:   mov    %edx,(%esp)
+   0x080488dc <+410>:   call   0x8048550 <strcpy@plt>
+   0x080488e1 <+415>:   addl   $0x1,0x4e4(%esp)
+   0x080488e9 <+423>:   addl   $0x1,0x4dc(%esp)
+   0x080488f1 <+431>:   mov    0x4c0(%esp),%eax
+   0x080488f8 <+438>:   mov    %eax,(%esp)
+   0x080488fb <+441>:   call   0x80485d0 <fgetc@plt>
+   0x08048900 <+446>:   mov    %eax,0x4e0(%esp)
+   0x08048907 <+453>:   cmpl   $0xffffffff,0x4e0(%esp)
+   0x0804890f <+461>:   jne    0x8048853 <main+273>
+   0x08048915 <+467>:   movl   $0x0,(%esp)
+   0x0804891c <+474>:   call   0x8048530 <time@plt>
+   0x08048921 <+479>:   mov    %eax,0xb0(%esp)
+   0x08048928 <+486>:   lea    0xb0(%esp),%eax
+   0x0804892f <+493>:   mov    %eax,(%esp)
+   0x08048932 <+496>:   call   0x8048580 <localtime@plt>
+   0x08048937 <+501>:   mov    (%eax),%edx
+   0x08048939 <+503>:   mov    %edx,0x84(%esp)
+   0x08048940 <+510>:   mov    0x4(%eax),%edx
+---Type <return> to continue, or q <return> to quit---
+   0x08048943 <+513>:   mov    %edx,0x88(%esp)
+   0x0804894a <+520>:   mov    0x8(%eax),%edx
+   0x0804894d <+523>:   mov    %edx,0x8c(%esp)
+   0x08048954 <+530>:   mov    0xc(%eax),%edx
+   0x08048957 <+533>:   mov    %edx,0x90(%esp)
+   0x0804895e <+540>:   mov    0x10(%eax),%edx
+   0x08048961 <+543>:   mov    %edx,0x94(%esp)
+   0x08048968 <+550>:   mov    0x14(%eax),%edx
+   0x0804896b <+553>:   mov    %edx,0x98(%esp)
+   0x08048972 <+560>:   mov    0x18(%eax),%edx
+   0x08048975 <+563>:   mov    %edx,0x9c(%esp)
+   0x0804897c <+570>:   mov    0x1c(%eax),%edx
+   0x0804897f <+573>:   mov    %edx,0xa0(%esp)
+   0x08048986 <+580>:   mov    0x20(%eax),%edx
+   0x08048989 <+583>:   mov    %edx,0xa4(%esp)
+   0x08048990 <+590>:   mov    0x24(%eax),%edx
+   0x08048993 <+593>:   mov    %edx,0xa8(%esp)
+   0x0804899a <+600>:   mov    0x28(%eax),%eax
+   0x0804899d <+603>:   mov    %eax,0xac(%esp)
+   0x080489a4 <+610>:   mov    0x98(%esp),%eax
+   0x080489ab <+617>:   lea    0x76c(%eax),%ecx
+   0x080489b1 <+623>:   mov    0x90(%esp),%eax
+   0x080489b8 <+630>:   mov    0x94(%esp),%edx
+   0x080489bf <+637>:   add    $0x1,%edx
+   0x080489c2 <+640>:   mov    %ecx,0x10(%esp)
+   0x080489c6 <+644>:   mov    %eax,0xc(%esp)
+   0x080489ca <+648>:   mov    %edx,0x8(%esp)
+   0x080489ce <+652>:   movl   $0x8048e67,0x4(%esp)
+   0x080489d6 <+660>:   lea    0x75(%esp),%eax
+   0x080489da <+664>:   mov    %eax,(%esp)
+   0x080489dd <+667>:   call   0x80485e0 <sprintf@plt>
+---Type <return> to continue, or q <return> to quit---
+   0x080489e2 <+672>:   lea    0x75(%esp),%eax
+   0x080489e6 <+676>:   mov    %eax,(%esp)
+   0x080489e9 <+679>:   call   0x8048560 <puts@plt>
+   0x080489ee <+684>:   jmp    0x8048ce2 <main+1440>
+   0x080489f3 <+689>:   movl   $0x8048e70,0x4(%esp)
+   0x080489fb <+697>:   movl   $0x8048e2b,(%esp)
+   0x08048a02 <+704>:   call   0x8048500 <printf@plt>
+   0x08048a07 <+709>:   call   0x8048510 <getchar@plt>
+   0x08048a0c <+714>:   mov    %eax,0x4ec(%esp)
+   0x08048a13 <+721>:   cmpl   $0xa,0x4ec(%esp)
+   0x08048a1b <+729>:   jne    0x8048a29 <main+743>
+   0x08048a1d <+731>:   call   0x8048510 <getchar@plt>
+   0x08048a22 <+736>:   mov    %eax,0x4ec(%esp)
+   0x08048a29 <+743>:   cmpl   $0x2f,0x4ec(%esp)
+   0x08048a31 <+751>:   jle    0x8048ce2 <main+1440>
+   0x08048a37 <+757>:   cmpl   $0x33,0x4ec(%esp)
+   0x08048a3f <+765>:   jg     0x8048ce2 <main+1440>
+   0x08048a45 <+771>:   cmpl   $0x31,0x4ec(%esp)
+   0x08048a4d <+779>:   jne    0x8048b61 <main+1055>
+   0x08048a53 <+785>:   movl   $0x0,0x4d4(%esp)
+   0x08048a5e <+796>:   movl   $0x8048ee9,0x4(%esp)
+   0x08048a66 <+804>:   movl   $0x8048e2b,(%esp)
+   0x08048a6d <+811>:   call   0x8048500 <printf@plt>
+   0x08048a72 <+816>:   lea    0x2f(%esp),%eax
+   0x08048a76 <+820>:   mov    %eax,0x4(%esp)
+   0x08048a7a <+824>:   movl   $0x8048e2b,(%esp)
+   0x08048a81 <+831>:   call   0x80485f0 <__isoc99_scanf@plt>
+   0x08048a86 <+836>:   movl   $0x0,0x4d0(%esp)
+   0x08048a91 <+847>:   jmp    0x8048af0 <main+942>
+   0x08048a93 <+849>:   lea    0xd4(%esp),%edx
+   0x08048a9a <+856>:   mov    0x4d0(%esp),%eax
+---Type <return> to continue, or q <return> to quit---
+   0x08048aa1 <+863>:   imul   $0x32,%eax,%eax
+   0x08048aa4 <+866>:   add    %edx,%eax
+   0x08048aa6 <+868>:   movl   $0x8048ef8,0x4(%esp)
+   0x08048aae <+876>:   mov    %eax,(%esp)
+   0x08048ab1 <+879>:   call   0x80484f0 <strcmp@plt>
+   0x08048ab6 <+884>:   test   %eax,%eax
+   0x08048ab8 <+886>:   jne    0x8048ae8 <main+934>
+   0x08048aba <+888>:   lea    0xd4(%esp),%edx
+   0x08048ac1 <+895>:   mov    0x4d0(%esp),%eax
+   0x08048ac8 <+902>:   imul   $0x32,%eax,%eax
+   0x08048acb <+905>:   add    %eax,%edx
+   0x08048acd <+907>:   lea    0x2f(%esp),%eax
+   0x08048ad1 <+911>:   mov    %eax,0x4(%esp)
+   0x08048ad5 <+915>:   mov    %edx,(%esp)
+   0x08048ad8 <+918>:   call   0x8048550 <strcpy@plt>
+   0x08048add <+923>:   movl   $0x1,0x4d4(%esp)
+   0x08048ae8 <+934>:   addl   $0x1,0x4d0(%esp)
+   0x08048af0 <+942>:   mov    0x4d0(%esp),%eax
+   0x08048af7 <+949>:   cmp    0x4e4(%esp),%eax
+   0x08048afe <+956>:   jl     0x8048a93 <main+849>
+   0x08048b00 <+958>:   cmpl   $0x0,0x4d4(%esp)
+   0x08048b08 <+966>:   jne    0x8048b30 <main+1006>
+   0x08048b0a <+968>:   mov    0x4e4(%esp),%eax
+   0x08048b11 <+975>:   add    $0x1,%eax
+   0x08048b14 <+978>:   lea    0xd4(%esp),%edx
+   0x08048b1b <+985>:   imul   $0x32,%eax,%eax
+   0x08048b1e <+988>:   add    %eax,%edx
+   0x08048b20 <+990>:   lea    0x2f(%esp),%eax
+   0x08048b24 <+994>:   mov    %eax,0x4(%esp)
+   0x08048b28 <+998>:   mov    %edx,(%esp)
+   0x08048b2b <+1001>:  call   0x8048550 <strcpy@plt>
+---Type <return> to continue, or q <return> to quit---
+   0x08048b30 <+1006>:  movl   $0x8048f02,(%esp)
+   0x08048b37 <+1013>:  call   0x8048500 <printf@plt>
+   0x08048b3c <+1018>:  lea    0x2f(%esp),%eax
+   0x08048b40 <+1022>:  mov    %eax,(%esp)
+   0x08048b43 <+1025>:  call   0x8048500 <printf@plt>
+   0x08048b48 <+1030>:  movl   $0xa,(%esp)
+   0x08048b4f <+1037>:  call   0x80485c0 <putchar@plt>
+   0x08048b54 <+1042>:  addl   $0x1,0x4e4(%esp)
+   0x08048b5c <+1050>:  jmp    0x8048ce2 <main+1440>
+   0x08048b61 <+1055>:  cmpl   $0x32,0x4ec(%esp)
+   0x08048b69 <+1063>:  jne    0x8048c80 <main+1342>
+   0x08048b6f <+1069>:  movl   $0x8048f12,0x4(%esp)
+   0x08048b77 <+1077>:  movl   $0x8048e2b,(%esp)
+   0x08048b7e <+1084>:  call   0x8048500 <printf@plt>
+   0x08048b83 <+1089>:  lea    0xca(%esp),%eax
+   0x08048b8a <+1096>:  mov    %eax,0x4(%esp)
+   0x08048b8e <+1100>:  movl   $0x8048e2b,(%esp)
+   0x08048b95 <+1107>:  call   0x80485f0 <__isoc99_scanf@plt>
+   0x08048b9a <+1112>:  lea    0xca(%esp),%eax
+   0x08048ba1 <+1119>:  mov    %eax,(%esp)
+   0x08048ba4 <+1122>:  call   0x8048560 <puts@plt>
+   0x08048ba9 <+1127>:  jmp    0x8048beb <main+1193>
+   0x08048bab <+1129>:  movl   $0x8048f2c,(%esp)
+   0x08048bb2 <+1136>:  call   0x8048560 <puts@plt>
+   0x08048bb7 <+1141>:  lea    0xca(%esp),%eax
+   0x08048bbe <+1148>:  mov    %eax,0x4(%esp)
+   0x08048bc2 <+1152>:  movl   $0x8048e2b,(%esp)
+   0x08048bc9 <+1159>:  call   0x80485f0 <__isoc99_scanf@plt>
+   0x08048bce <+1164>:  movl   $0x8048f57,0x4(%esp)
+   0x08048bd6 <+1172>:  lea    0xca(%esp),%eax
+   0x08048bdd <+1179>:  mov    %eax,(%esp)
+---Type <return> to continue, or q <return> to quit---
+   0x08048be0 <+1182>:  call   0x80484f0 <strcmp@plt>
+   0x08048be5 <+1187>:  test   %eax,%eax
+   0x08048be7 <+1189>:  jne    0x8048beb <main+1193>
+   0x08048be9 <+1191>:  jmp    0x8048c09 <main+1223>
+   0x08048beb <+1193>:  lea    0xd4(%esp),%eax
+   0x08048bf2 <+1200>:  mov    %eax,0x4(%esp)
+   0x08048bf6 <+1204>:  lea    0xca(%esp),%eax
+   0x08048bfd <+1211>:  mov    %eax,(%esp)
+   0x08048c00 <+1214>:  call   0x80486fd <nameInList>
+   0x08048c05 <+1219>:  test   %eax,%eax
+   0x08048c07 <+1221>:  je     0x8048bab <main+1129>
+   0x08048c09 <+1223>:  movl   $0x0,0x4cc(%esp)
+   0x08048c14 <+1234>:  jmp    0x8048c6e <main+1324>
+   0x08048c16 <+1236>:  lea    0xd4(%esp),%edx
+   0x08048c1d <+1243>:  mov    0x4cc(%esp),%eax
+   0x08048c24 <+1250>:  imul   $0x32,%eax,%eax
+   0x08048c27 <+1253>:  add    %edx,%eax
+   0x08048c29 <+1255>:  mov    %eax,0x4(%esp)
+   0x08048c2d <+1259>:  lea    0xca(%esp),%eax
+   0x08048c34 <+1266>:  mov    %eax,(%esp)
+   0x08048c37 <+1269>:  call   0x80484f0 <strcmp@plt>
+   0x08048c3c <+1274>:  test   %eax,%eax
+   0x08048c3e <+1276>:  jne    0x8048c66 <main+1316>
+   0x08048c40 <+1278>:  lea    0xd4(%esp),%edx
+   0x08048c47 <+1285>:  mov    0x4cc(%esp),%eax
+   0x08048c4e <+1292>:  imul   $0x32,%eax,%eax
+   0x08048c51 <+1295>:  add    %edx,%eax
+   0x08048c53 <+1297>:  movl   $0x54504d45,(%eax)
+   0x08048c59 <+1303>:  movl   $0x4f4c5359,0x4(%eax)
+   0x08048c60 <+1310>:  movw   $0x54,0x8(%eax)
+   0x08048c66 <+1316>:  addl   $0x1,0x4cc(%esp)
+---Type <return> to continue, or q <return> to quit---
+   0x08048c6e <+1324>:  mov    0x4cc(%esp),%eax
+   0x08048c75 <+1331>:  cmp    0x4e4(%esp),%eax
+   0x08048c7c <+1338>:  jl     0x8048c16 <main+1236>
+   0x08048c7e <+1340>:  jmp    0x8048ce2 <main+1440>
+   0x08048c80 <+1342>:  cmpl   $0x33,0x4ec(%esp)
+   0x08048c88 <+1350>:  jne    0x8048ce2 <main+1440>
+   0x08048c8a <+1352>:  movl   $0x8048f5c,(%esp)
+   0x08048c91 <+1359>:  call   0x8048560 <puts@plt>
+   0x08048c96 <+1364>:  movl   $0x0,0x4c8(%esp)
+   0x08048ca1 <+1375>:  jmp    0x8048cd2 <main+1424>
+   0x08048ca3 <+1377>:  lea    0xd4(%esp),%edx
+   0x08048caa <+1384>:  mov    0x4c8(%esp),%eax
+   0x08048cb1 <+1391>:  imul   $0x32,%eax,%eax
+   0x08048cb4 <+1394>:  add    %edx,%eax
+   0x08048cb6 <+1396>:  mov    %eax,(%esp)
+   0x08048cb9 <+1399>:  call   0x8048500 <printf@plt>
+   0x08048cbe <+1404>:  movl   $0xa,(%esp)
+   0x08048cc5 <+1411>:  call   0x80485c0 <putchar@plt>
+   0x08048cca <+1416>:  addl   $0x1,0x4c8(%esp)
+   0x08048cd2 <+1424>:  mov    0x4c8(%esp),%eax
+   0x08048cd9 <+1431>:  cmp    0x4e4(%esp),%eax
+   0x08048ce0 <+1438>:  jle    0x8048ca3 <main+1377>
+   0x08048ce2 <+1440>:  cmpl   $0x30,0x4ec(%esp)
+   0x08048cea <+1448>:  jne    0x80489f3 <main+689>
+   0x08048cf0 <+1454>:  mov    0x4c0(%esp),%eax
+   0x08048cf7 <+1461>:  mov    %eax,(%esp)
+   0x08048cfa <+1464>:  call   0x8048520 <fclose@plt>
+   0x08048cff <+1469>:  lea    0x75(%esp),%eax
+   0x08048d03 <+1473>:  mov    %eax,(%esp)
+   0x08048d06 <+1476>:  call   0x8048560 <puts@plt>
+   0x08048d0b <+1481>:  movl   $0x8048f86,0x4(%esp)
+---Type <return> to continue, or q <return> to quit---
+   0x08048d13 <+1489>:  movl   $0x8048e5a,(%esp)
+   0x08048d1a <+1496>:  call   0x80485b0 <fopen@plt>
+   0x08048d1f <+1501>:  mov    %eax,0x4bc(%esp)
+   0x08048d26 <+1508>:  movl   $0x0,0x4c4(%esp)
+   0x08048d31 <+1519>:  jmp    0x8048d69 <main+1575>
+   0x08048d33 <+1521>:  lea    0xd4(%esp),%edx
+   0x08048d3a <+1528>:  mov    0x4c4(%esp),%eax
+   0x08048d41 <+1535>:  imul   $0x32,%eax,%eax
+   0x08048d44 <+1538>:  add    %edx,%eax
+   0x08048d46 <+1540>:  mov    %eax,0x8(%esp)
+   0x08048d4a <+1544>:  movl   $0x8048f88,0x4(%esp)
+   0x08048d52 <+1552>:  mov    0x4bc(%esp),%eax
+   0x08048d59 <+1559>:  mov    %eax,(%esp)
+   0x08048d5c <+1562>:  call   0x80485a0 <fprintf@plt>
+   0x08048d61 <+1567>:  addl   $0x1,0x4c4(%esp)
+   0x08048d69 <+1575>:  mov    0x4c4(%esp),%eax
+   0x08048d70 <+1582>:  cmp    0x4e4(%esp),%eax
+   0x08048d77 <+1589>:  jle    0x8048d33 <main+1521>
+   0x08048d79 <+1591>:  mov    0x4bc(%esp),%eax
+   0x08048d80 <+1598>:  mov    %eax,(%esp)
+   0x08048d83 <+1601>:  call   0x8048520 <fclose@plt>
+   0x08048d88 <+1606>:  mov    $0x0,%eax
+   0x08048d8d <+1611>:  leave
+   0x08048d8e <+1612>:  ret 
