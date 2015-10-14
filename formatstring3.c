@@ -61,12 +61,12 @@ int main(int argc, char **argv) {
 
   while (menuChoice != '0') {
 
-    printf("%s", "\n___DINSMORE SCHOLARSHIP - MANAGEMENT___ \nMenu:\n1: Add a student\n2: Remove a student\n3: Print students\n0: Exit\n\nChoice: ");
+    printf("%s", "\n___DINSMORE SCHOLARSHIP - MANAGEMENT___ \nMenu:\n1: Add a student\n2: Remove a student\n3: Print students\n4: Disburse funds to winners\n0: Exit\n\nChoice: ");
     menuChoice = getchar();
 
     if (menuChoice == '\n') menuChoice = getchar();
 
-    if (menuChoice > '/' && menuChoice < '4') {
+    if (menuChoice > '/' && menuChoice < '5') {
       if (menuChoice == '1') {
         int added = 0;
         printf("%s", "Student name: ");
@@ -101,6 +101,25 @@ int main(int argc, char **argv) {
         for (int i = 0; i <= lastNameIndex; i++) {
           printf(studentNames[i]);
           printf("\n");
+        }
+      }
+      else if (menuChoice == '4') {
+        char inputUsername[10];
+        char inputPass[10];
+        printf("Presidential authentication required:\n");
+        printf("Username: ");
+        char *login = "president";
+        char *presPass = "kanye2016";
+        scanf(" %99[^\n]", inputUsername);
+        printf("Password: ");
+        scanf("%s", inputPass);
+
+        if (strcmp(login, inputUsername) != 0 || strcmp(presPass, inputPass) != 0) {
+          printf("Invalid presidential credentials for username: ");
+          printf(inputUsername);
+          printf("\n");
+        } else {
+          printf("Funds disbursed, Mr. President.\n");
         }
       }
     }
